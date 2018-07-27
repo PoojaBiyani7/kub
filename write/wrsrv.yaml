@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: testsrv1
+spec:
+  selector:
+    app: write
+  type: LoadBalancer
+  ports:
+    - name: write
+      port: 6677
+      targetPort: 80
+      
+  
+
